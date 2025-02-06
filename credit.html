@@ -1,0 +1,40 @@
+<!-- HTML File: credit-card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Information</title>
+    <link rel="stylesheet" href="credit.css">
+    <script src="credit.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div>Banking</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="credit-card-info">
+        <h2>Credit Card Information</h2>
+        <p>Our credit card provides secure and convenient transactions with great benefits.</p>
+        <button id="verify-btn">Start Self Verification</button>
+    </div>
+    <div id="verification-process" class="hidden">
+        <h2>Self Verification</h2>
+        <p>Please upload your ID and a selfie for verification.</p>
+        <input type="file" id="id-upload" accept="image/*">
+        <input type="file" id="selfie-upload" accept="image/*">
+        <button id="submit-verification">Submit</button>
+    </div>
+    <div id="mobile-verification" class="hidden">
+        <h2>Mobile Number Verification</h2>
+        <p>Enter your mobile number to receive a verification code.</p>
+        <input type="text" id="mobile-number" placeholder="Enter mobile number">
+        <button id="send-code">Send Code</button>
+        <p>Enter the verification code sent to your mobile.</p>
+        <input type="text" id="verification-code" placeholder="Enter verification code">
+        <button id="verify-code">Verify</button>
+    </div>
+</body>
+</html>
